@@ -15,6 +15,6 @@ const birthYear =1994;
 const year =2023;
  
 const durga= 'I'+firstName +(year-birthYear)+'years old'+job;
-console.log(durga);
+// console.log(durga);
 
-console.log(`hello welcome`);
+// console.log(`hello welcome`);
