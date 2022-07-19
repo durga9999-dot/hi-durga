@@ -17,3 +17,16 @@ if(language===english && population < 50 && !isIsland){
 }else{
   console.log(`sahara does n't live in ${country} :)`);
 }
+
+
+
+const scoreDolphins = (96+108+89)/3;
+const scoreKoalas   =(89+91+110)/3;
+console.log(scoreDolphins,scoreKoalas);
+if(scoreDolphins>scoreKoalas){
+  console.log("trophy win Dolphins");}
+  else if(scoreKoalas>scoreDolphins){
+    console.log("trophy win koalas");
+  }else if(scoreDolphins===scoreKoalas){
+    console.log("both same stuff");
+  }
