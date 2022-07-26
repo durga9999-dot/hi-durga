@@ -7,29 +7,52 @@
 // const total =[bills[0] + Tips[0] + bills[1] + Tips[1] + bills[2] + Tips[2]];
 // console.log(total);
 
-const durga ={
-    firstName :'durgarao',
-    lastName :'Sirisolla',
-    age :28,
-    birthYear:1994,
-    job:'UI Developer',
-    friends:['Aravind','Akhi','Eswar'],
-    hasDrivingLicense :true,
-    calAge:function(){
-       this.age = 2022-this.birthYear
-        return this.age;
-    },
-    Summary: function () {
-        return`The ${this.firstName} is a ${this.calAge()} old his working on ${this.job} years and he is ${this.hasDrivingLicense ? 'a' :'no' }driving license`
+// const durga ={
+//     firstName :'durgarao',
+//     lastName :'Sirisolla',
+//     age :28,
+//     birthYear:1994,
+//     job:'UI Developer',
+//     friends:['Aravind','Akhi','Eswar'],
+//     hasDrivingLicense :true,
+//     calAge:function(){
+//        this.age = 2022-this.birthYear
+//         return this.age;
+//     },
+//     Summary: function () {
+//         return`The ${this.firstName} is a ${this.calAge()} old his working on ${this.job} years and he is ${this.hasDrivingLicense ? 'a' :'no' }driving license`
+//     }
+// }
+// console.log(durga.Summary());
+//    console.log(durga.calAge());
+//    console.log(durga['calAge']())
+// console.log(durga);
+// console.log(durga.lastName);
+// console.log(durga['firstName'])
+// const nameKey ='Name';
+// console.log(durga[ 'first' + nameKey] )
+// console.log(durga['last' + nameKey]);
+// console.log(`${durga.firstName} has best friend ${durga.friends[1]}`);
+
+const durga = {
+    fullName:'durgarao',
+    mass:60,
+    height:1.55,
+    calBMI:function(){
+        this.bmi =this.mass/this.height ** 2;
+        this.bmi;
     }
 }
-console.log(durga.Summary());
-   console.log(durga.calAge());
-   console.log(durga['calAge']())
-console.log(durga);
-console.log(durga.lastName);
-console.log(durga['firstName'])
-const nameKey ='Name';
-console.log(durga[ 'first' + nameKey] )
-console.log(durga['last' + nameKey]);
-console.log(`${durga.firstName} has best friend ${durga.friends[1]}`);
+const bobby ={
+    fullName:'bobby Kumar',
+    mass:65,
+    height:1.69,
+    calBMI:function(){
+        this.bmi = this.mass/this.height **2;
+        return this.bmi;
+    }
+}
+durga.calBMI();
+console.log(durga.bmi)
+bobby.calBMI();
+console.log(bobby.bmi)
